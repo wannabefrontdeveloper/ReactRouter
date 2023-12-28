@@ -5,6 +5,7 @@ import Profile from "./pages/Profile";
 import Article from "./pages/Article";
 import Articles from "./pages/Articles";
 import Layout from "./Layout";
+import NotFound from "./pages/NotFound";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <Route path="/articles" element={<Articles />}>
         <Route path=":id" element={<Article />} />
       </Route>
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 };
