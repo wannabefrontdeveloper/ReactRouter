@@ -9,8 +9,8 @@ import Layout from "./Layout";
 const App = () => {
   return (
     <Routes>
-      <Route elemet={<Layout />}>
-        <Route path="/" element={<Home />} />
+      <Route element={<Layout />}>
+        <Route index element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/profiles/:username" element={<Profile />} />
       </Route>
